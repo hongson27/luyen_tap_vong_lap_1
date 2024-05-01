@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 8</title>
+</head>
+<body>
+<button onclick="Start()">Bat dau</button>
+<script>
+    function Start() {
+        let input = +prompt('Ban muon doan so trong gioi han so lon nhat la bao nhieu:');
+        let numberRandom = Math.floor(Math.random() * input);
+        for (let i = 0; i < 3; i++)
+        {
+            let inputUser = +prompt('Nhap so ban doan:');
+            if ( inputUser === numberRandom) {
+                alert('Chuc mung ban da doan dung');
+                break;
+            } else if (inputUser < numberRandom){
+                alert('So ban doan nho hon');
+            } else {
+                alert('So ban doan lon hon');
+            }
+            if (i === 2) {
+                alert('Ban da het so luot doan');
+            }
+        }
+    }
+</script>
+</body>
+</html>

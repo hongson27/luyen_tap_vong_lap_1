@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let first = 0;
+    let second = 1;
+    let next;
+    for (let i = 0 ;; i++) {
+        if (first % 7 == 0) {
+            document.write(first + "<br>");
+            break;
+        }
+        next = first + second;
+        first = second;
+        second = next;
+        // if (next > 1000000) {
+        //     break;
+        // }
+    }
+</script>
+</body>
+</html>

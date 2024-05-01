@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 6</title>
+</head>
+<body>
+<script>
+    let input = +prompt('Nhap n:');
+    let count =0;
+    let total =0;
+    for (let i=0;; i++) {
+        if (i%7 == 0){
+            document.write(i + "<br>");
+            count++;
+            total += i;
+        }
+        if (count == input) {
+            break;
+        }
+    }
+    document.write('Tong la:' + total);
+</script>
+</body>
+</html>
